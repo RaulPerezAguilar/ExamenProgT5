@@ -1,0 +1,42 @@
+Parte teórica  
+1. Responde brevemente a las siguientes cuestiones: 
+
+
+2. ¿Por qué ItemBiblioteca se ha definido como clase abstracta? 
+para que en el main no podamos crear ItemBiblioteca p = new ItemBiblioteca;
+
+
+3. Explica por qué la relación entre Libro y Autor es composición y no herencia. 
+porque no esta heredando atributos desde ItemBiblioteca sino que unicamente esta asignando valores a autor para libro unicamente
+
+4. Indica dos ventajas de usar encapsulación en las clases del ejercicio. 
+Que solo puedan ser utilizadas por las clases hijas y mantener orden
+
+5. ¿Por qué ConfiguracionSistema podría declararse como final? 
+Porque a priori es como deberia de quedar, sin modificacion
+
+6. ¿Qué ocurriría si el atributo contador de ContadorItems no fuera estático? 
+que seria variable y prodia estar cambiando desde otro sitio del codigo
+
+7. En qué situaciones es más adecuado utilizar herencia en lugar de composición. 
+Por ejemplo en ejercicios como el de Animales para que lo herede perro,gato,pajaro
+
+8. ¿Qué métodos importantes heredan todas las clases de Object? Menciona al menos 
+tres. 
+
+
+9. Explica brevemente el polimorfismo y cómo aparece en este ejercicio. 
+
+
+10. Observa el siguiente método: 
+public static void modificarTitulo(String titulo) { 
+titulo = "Nuevo título"; 
+} 
+y la llamada: 
+String t = "Java"; 
+modificarTitulo(t); 
+System.out.println(t); 
+1. ¿Qué se imprimirá? 
+2. Explica por qué ocurre esto en Java. 
+Java, ya que estas indicando que imprima t que es java justo despues de asignar nuevo nombre de titulo ya depende de
+si titulo tiene la posibilidad de modificarse o no para que nos muestre error por ser por ejemplo final.
